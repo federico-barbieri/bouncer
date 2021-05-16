@@ -6,7 +6,7 @@
 .background {
   background-color: rgb(0,0,0);
   width: 2000px;
-  height: 2200px;
+  height: 3000px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +16,9 @@
 
 .bouncer {
   position: absolute;
-  transform: scale(2.5);
-  left: 250px;
-  bottom: 300px;
+  transform: scale(3);
+  left: 520px;
+  bottom: 150px;
 
 
 }
