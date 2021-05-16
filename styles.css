@@ -5,8 +5,8 @@
 
 .background {
   background-color: rgb(0,0,0);
-  width: 1000px;
-  height: 1800px;
+  width: 2000px;
+  height: 2200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@
 .bouncer {
   position: absolute;
   transform: scale(2.5);
-  left: 200px;
+  left: 250px;
   bottom: 300px;
 
 
