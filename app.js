@@ -57,15 +57,15 @@ var negativeResponse = ["Sorry mate, can't come in wearing sandals.",
 // Who goes in and who doesn't
 
 function comeIn(){
-for (let i=0; i<groupOfFriends; i++){
+for (let i=1; i<=groupOfFriends; i++){
 
   passOrNot();
   if (passOrNot() === "Yes"){
     counter+=1;
-    alert(positiveResponse[randomNumForAnswer()]);
+    alert("Person " + i + ": " + positiveResponse[randomNumForAnswer()]);
 
   } else {
-    alert(negativeResponse[randomNumForAnswer()]);
+    alert("Person " + i + ": " + negativeResponse[randomNumForAnswer()]);
   }
 }
 
