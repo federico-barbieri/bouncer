@@ -85,6 +85,7 @@ for (let i=0; i<groupOfFriends; i++){
     alert(negativeResponse[randomNumForAnswer()]);
   }
 }
+
 if (counter == 0) {
   alert("Ouch, you didn't get any of your friends inside. Maybe another day.");
 } else if (counter == 1) {
