@@ -1,8 +1,32 @@
 
+/*
+// change background color
+
+var background = document.querySelector('.background');
+
+var groupOfFriends;
+
+var counter = 0;
+
+function changeBackgroundColor() {
+
+
+  (counter <= groupOfFriends){
+  var newColor = Math.floor((Math.random() * 255) + 1);
+  var newColor2 = Math.floor((Math.random() * 255) + 1);
+  var newColor3 = Math.floor((Math.random() * 255) + 1);
+  background.style.backgroundColor = 'rgb(' + newColor + ',' + newColor2 + ',' + newColor3 + ')';
+  }
+}
+
+*/
+
 
 // How many are you?
 
 var groupOfFriends;
+
+var counter = 0;
 
 function howManyAreYou(){
 
@@ -49,8 +73,6 @@ var negativeResponse = ["Sorry mate, can't come in wearing sandals.", "We both k
 
 // Who goes in and who doesn't
 
-var counter = 0;
-
 function comeIn(){
 for (let i=0; i<groupOfFriends; i++){
 
@@ -73,7 +95,8 @@ alert("Nice! You got " + counter + " friends inside! Time to party!");
 }
 
 
-// Timeline
 
+// Timeline
+//window.setTimeout(changeBackgroundColor(), 60000);
 setTimeout(function() {howManyAreYou();}, 1500);
 setTimeout(function() {comeIn();}, 8000);
