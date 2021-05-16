@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-color: black;
+  width: 375px;
+  height: 667px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+
+}
+
+.bouncer {
+  position: absolute;
+  transform: scale(0.5);
+  transform: translate(-90px, -698px);
+}
