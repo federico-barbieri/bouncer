@@ -1,26 +1,4 @@
 
-/*
-// change background color
-
-var background = document.querySelector('.background');
-
-var groupOfFriends;
-
-var counter = 0;
-
-function changeBackgroundColor() {
-
-
-  (counter <= groupOfFriends){
-  var newColor = Math.floor((Math.random() * 255) + 1);
-  var newColor2 = Math.floor((Math.random() * 255) + 1);
-  var newColor3 = Math.floor((Math.random() * 255) + 1);
-  background.style.backgroundColor = 'rgb(' + newColor + ',' + newColor2 + ',' + newColor3 + ')';
-  }
-}
-
-*/
-
 
 // How many are you?
 
@@ -61,14 +39,19 @@ function randomNumForAnswer(){
 }
 // positive answers
 
-var positiveResponse = ["Okay, mate. You're good to go.", "Thanks lad, enjoy the night.", "Thanks, have a great night.", "Okay, come on in. Great shirt by the way.",
-"You're all good, come on in.", "Perfect, enjoy the night friend.", "Looks good to me. Enjoy.", "Great, thanks. This way.",
+var positiveResponse = ["Okay, mate. You're good to go.", "Thanks lad, enjoy the night.",
+"Thanks, have a great night.", "Okay, come on in. Great shirt by the way.",
+"You're all good, come on in.", "Perfect, enjoy the night friend.",
+"Looks good to me. Enjoy.", "Great, thanks. This way.",
 "Nice picture, man. Come in.", "May I say you look way younger? Enjoy, thanks."];
 
 // negative answers
 
-var negativeResponse = ["Sorry mate, can't come in wearing sandals.", "We both know this is fake. Out of the line.", "No ID no party, mate. Out of the line.",
- "Do you think shorts is the etiquette of this place? Out.", "I saw you cutting the line, mate. Out.", "Not today, pal. Out.", "You look quite drunk already. Out"];
+var negativeResponse = ["Sorry mate, can't come in wearing sandals.",
+"We both know this is fake. Out of the line.", "No ID no party, mate. Out of the line.",
+ "Do you think shorts is the etiquette of this place? Out.",
+ "I saw you cutting the line, mate. Out.", "Not today, pal. Out.",
+ "You look quite drunk already. Out", "You're definitely underage. Out"];
 
 
 // Who goes in and who doesn't
@@ -93,11 +76,17 @@ if (counter == 0) {
 } else {
 alert("Nice! You got " + counter + " friends inside! Time to party!");
 }
+endOfGame = true;
 }
 
 
 
 // Timeline
-//window.setTimeout(changeBackgroundColor(), 60000);
-setTimeout(function() {howManyAreYou();}, 1500);
-setTimeout(function() {comeIn();}, 8000);
+
+
+//setTimeout(function() {howManyAreYou();}, 1500);
+//setTimeout(function() {comeIn();}, 5000);
+
+
+setTimeout(howManyAreYou(), 1500);
+setTimeout(comeIn(), 5000);
