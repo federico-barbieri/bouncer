@@ -1,5 +1,12 @@
 
 
+// load page
+
+const body = document.querySelector("body");
+
+
+
+
 // How many are you?
 
 var groupOfFriends;
@@ -35,7 +42,7 @@ if (randomNum % 2 === 0){
 
 // random number generator for answers
 function randomNumForAnswer(){
-  return Math.floor((Math.random() * groupOfFriends) + 1);
+  return Math.floor(Math.random() * groupOfFriends);
 }
 // positive answers
 
@@ -70,7 +77,7 @@ for (let i=1; i<=groupOfFriends; i++){
 }
 
 if (counter == 0) {
-  alert("Ouch, you didn't get any of your friends inside. Maybe another day.");
+  alert("Ouch, you didn't get any of your friends inside. Maybe next time.");
 } else if (counter == 1) {
   alert("Nice! You got " + counter + " friend inside! Time to party!");
 } else {
@@ -84,9 +91,5 @@ endOfGame = true;
 // Timeline
 
 
-//setTimeout(function() {howManyAreYou();}, 1500);
-//setTimeout(function() {comeIn();}, 5000);
-
-
-setTimeout(howManyAreYou(), 1500);
-setTimeout(comeIn(), 5000);
+setTimeout(function() {howManyAreYou();}, 3000);
+setTimeout(function() {comeIn();}, 5000);

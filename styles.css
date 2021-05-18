@@ -14,8 +14,39 @@
 }
 
 
-.bouncer {
-  position: absolute;
-  transform: scale(2);
-  left: 200px;
-  bottom: 100px;
+/* laptops */
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px) {
+    .bouncer {
+      position: absolute;
+      transform: scale(0.5);
+      left: 100px;
+    }
+  }
+
+
+/* phone */
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    .bouncer {
+      position: absolute;
+      transform: scale(2);
+      left: 80px;
+      bottom: 400px;
+    }
+
+    .background {
+      background-color: black;
+      width: 480px;
+      min-height: calc(100vh - 56px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+}
