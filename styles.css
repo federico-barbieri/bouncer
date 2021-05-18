@@ -3,26 +3,23 @@
   padding: 0;
 }
 
-.background {
-  background-color: black;
-  min-width: 100vw;
-  min-height: calc(100vh - 56px);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
 
 /* laptops */
 @media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px) {
+  and (min-device-width: 1200px) {
+    .background {
+      background-color: black;
+      width: 2000px;
+      height: 1000px;
+    }
+
     .bouncer {
       position: absolute;
-      transform: scale(0.5);
-      left: 100px;
+      transform: scale(1);
+      left: 550px;
+      bottom: 100px;
     }
+
   }
 
 
@@ -33,6 +30,16 @@
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    .background {
+      background-color: black;
+      min-width: 320px;
+      max-width: 480px;
+      min-height: calc(100vh - 56px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .bouncer {
       position: absolute;
       transform: scale(2);
@@ -40,13 +47,5 @@
       bottom: 400px;
     }
 
-    .background {
-      background-color: black;
-      width: 480px;
-      min-height: calc(100vh - 56px);
-      display: flex;
-      justify-content: center;
-      align-items: center;
 
-    }
 }
