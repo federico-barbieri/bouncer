@@ -32,7 +32,7 @@
   and (orientation: portrait) {
     .background {
       background-color: black;
-      width: 1000px;
+      width: 1100px;
       min-height: calc(100vh - 56px);
       display: flex;
       justify-content: center;
@@ -42,7 +42,7 @@
     .bouncer {
       position: absolute;
       transform: scale(2);
-      left: 130px;
+      left: 160px;
       bottom: 400px;
     }
 
