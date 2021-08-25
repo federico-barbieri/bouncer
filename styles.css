@@ -24,6 +24,6 @@ body{
 .bouncer{
 display: inline-block;
 max-width: 100%;
-min-height: auto;
+min-height: 75vh;
 margin: 1rem auto 0 auto;
 }
