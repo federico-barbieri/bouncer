@@ -9,13 +9,21 @@ html{
 
 body{
   background-color: black;
-  margin: 1rem auto 0 auto;
   overflow: hidden;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  max-height: auto;
+  margin: 1rem auto 0 auto;
 }
 
 .bouncer{
 display: inline-block;
-min-width: 80%;
-min-height: 90vh;
+max-width: 100%;
+min-height: auto;
 margin: 1rem auto 0 auto;
 }
