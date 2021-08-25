@@ -91,5 +91,5 @@ endOfGame = true;
 // Timeline
 
 
-setTimeout(function() {howManyAreYou();}, 3000);
-setTimeout(function() {comeIn();}, 5000);
+//setTimeout(function() {howManyAreYou();}, 3000);
+//setTimeout(function() {comeIn();}, 5000);

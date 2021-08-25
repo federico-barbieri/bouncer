@@ -14,8 +14,8 @@ body{
 }
 
 .bouncer{
-  display: inline-block;
-min-width: 100%;
+display: inline-block;
+min-width: 80%;
 min-height: 90vh;
 margin: 1rem auto 0 auto;
 }
